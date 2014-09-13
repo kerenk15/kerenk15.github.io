@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700); 
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700); */
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 html {
   height: 100%;
   width: 100%;
-}
+} 
 
 body{
   font-family: Lato,sans-serif;
@@ -13,12 +13,16 @@ body{
   box-sizing: border-box;
 }
 
+header{
+	height: 80px;
+	background-color:white;
+}
 .full_page{
   background: #e9d4b3;
   position: absolute;
-  width: 800px;
+  width: 1000px;
   left: 50%;
-  margin-left: -400px;
+  margin-left: -500px;
 }
 
 .general{
@@ -29,6 +33,8 @@ body{
 .logo{
   width: 185px;
   height: 62px;
+  vertical-align: bottom;
+  float: left;
 }
 
 .login{
@@ -46,11 +52,20 @@ body{
 
 .lang {
 display: block;
+margin: 10px;
+position: absolute;
+right: 0;
+}
+
+.head_nav{
+display: inline-block;
+width: 810px;
+margin-top:30px;
+margin-left: 0;
 }
 
 nav li{
   float:left;
-  display: inline-block;
   padding: 10px;
   border-left: 1px solid #585951;
 }
@@ -77,8 +92,8 @@ li{
   width: 175px;
   height: 20px;
   border-radius: 5px;
-  display: inline-block;
   position: relative;
+  float: right;
 }
 
 .search_button{
@@ -91,8 +106,17 @@ li{
   margin-top: 4px;
 }
 
+.slides{
+	background-image: url(../images/first_slide.png);
+    background-position: 50% 90%;
+    height: 480px;
+}
+
+.slides_info{
+	width: 400px;
+}
+
 h1 {
-  clear: both;
   margin: 10px;
   font-size: 38.5px; 
   text-transform: capitalize;
@@ -101,6 +125,7 @@ h1 {
 h2 {
   font-size: 31.5px;
   text-transform: capitalize;
+  margin: 10px;
 }
 
 .blue_button{
@@ -114,7 +139,7 @@ h2 {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin: 10px;
-  width: 140px;
+ width: 140px;
 }
 
 .blue_button:after{
@@ -138,11 +163,11 @@ h2 {
   height: 130px;
   padding: 10px 14px;
   text-transform: capitalize;
-  display: inline-block;
   border-radius: 6px;
   text-decoration: none;
   color: #FFFFFF;
   margin: 24px;
+  float: left;
 }
 
 .conection{
@@ -170,7 +195,17 @@ margin-top: 10px;
 }
 
 .colorbox:hover{
-background: #D13480;
+  opacity:1;
+}
+
+.green_bg{
+  background-color:#32CD32;
+  opacity:0.5;
+}
+
+.orange_bg{
+  background-color: #FF8C00;
+  opacity:0.5;
 }
 
 .pink_bg{
@@ -179,10 +214,21 @@ background: #D13480;
 }
 
 h4 {
-  font-size:3.6em;
+  font-size:3em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 100;
+}
+
+.services{
+	background: #4682B4;
+	height: 300px;
+}
+
+.center{
+margin: o auto;
+width: 260px;
+left: 300px;
 }
 
 .nav_icons{
@@ -201,6 +247,19 @@ h4 {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.news{
+	height: 300px;
+	background: url(../images/background2.png);
+}
+
+.news li{
+	float: left;
+}
+
+.news h5{
+display: inline-block;
+ padding: 0;}
 
 .date_container{
   width: 200px;
@@ -253,13 +312,13 @@ margin-right: 5px;
 }
 
 .picture_box{
-   width: 290px;
-   height: 150px;
-   padding: 50px 20px;
+   width: 240px;
+   height: 165px;
+   padding: 10px;
    background: white;
-   color:black;
-   font-size: 18px;
+   font-size: 14px;
    margin: 15px;
+   display: inline-block;
  }
 
 .picture_box img{
@@ -267,14 +326,40 @@ margin-right: 5px;
    margin-bottom: 15px;
  }
 
+blockquote{
+height: 100px;
+float: left;
+margin: 0 0 7px 0;
+width: 120px;
+line-height: 1.6;
+color: black;
+text-decoration: none;
+padding-left: 5px;
+}
+
+blockquote:before{
+ 	content: url(../images/quote-grey.png) no-repeat 50% 50%;
+ }
+
+.posission {
+   border-top: 1px solid black;
+   display: inline-block;
+   height: 42px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   width: 100%;
+ }
+
 .posission cite{
   text-decoration:uppercase;
   color: #4ea6ca;
-  display: block;
  }
 
-.posission span{
+.posission p{
   text-transform: capitalize;
+  color:black;
+  margin:0;
+  font-size: 12px;
  }
 
 .posission img{
@@ -283,8 +368,64 @@ margin-right: 5px;
   padding: 0;
 }
 
-.posission {
-   clear: left;
-   float: left;
-   border-top: 1px solid black;
+.medium_box{
+   width: 186px;
+   height: 165px;
+   padding: 10px;
+   background: white;
+   font-size: 14px;
+   margin: 15px;
+   display: inline-block;
+}
+
+.medium_box blockquote{
+width: 180px;
+} 
+
+.small_box{
+	display: inline-block;
+	margin: 10px;
+	width: 106px;
+}
+
+.success_stories{
+	background: #C0C0C0;
+	height: 550px;
+}
+
+footer  ul{
+  display: inline-block;
+  padding: 0; 
+}
+
+footer > ul> li {
+  float:left;
+ /* position: relative; */
+}
+
+footer > ul> li a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 202px;
+	text-align: left;
+	font:11px;
+	text-transform: capitalize;
+	line-height:1.5em;
+	margin-left: 15px;
+}
+
+h5{
+	text-transform: uppercase;
+	size:14px;
+	margin: 15px;
+}
+ footer{
+ 	background: black;
  }
+/* 
+h5 > ul > li{
+position: absolute;
+left: 0;
+} */
+
