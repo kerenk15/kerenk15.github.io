@@ -1,4 +1,3 @@
-/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700); */
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 html {
@@ -9,31 +8,22 @@ html {
 body{
   font-family: Lato,sans-serif;
   color: #FFFFFF;
-  margin: 0;
   box-sizing: border-box;
 }
 
 header{
 	height: 80px;
-	background-color:white;
-}
-.full_page{
-  background: #e9d4b3;
-  position: absolute;
-  width: 1000px;
-  left: 50%;
-  margin-left: -500px;
 }
 
-.general{
-  color: black;
-  text-align: center;
-}
+ .full_page{
+ width: 1000px; 
+ margin: 0 auto;
+} 
 
 .logo{
   width: 185px;
   height: 62px;
-  vertical-align: bottom;
+ /*  vertical-align: bottom; */
   float: left;
 }
 
@@ -103,13 +93,14 @@ li{
   border:none;
   position: absolute;
   right: 1px;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .slides{
 	background-image: url(../images/first_slide.png);
     background-position: 50% 90%;
     height: 480px;
+    /* margin-bottom: 10px; */
 }
 
 .slides_info{
@@ -222,11 +213,12 @@ h4 {
 
 .services{
 	background: #4682B4;
-	height: 300px;
+	height: 350px;
+	overflow: auto;
 }
 
 .center{
-margin: o auto;
+float: center;
 width: 260px;
 left: 300px;
 }
@@ -249,8 +241,9 @@ left: 300px;
 }
 
 .news{
-	height: 300px;
+	height: 350px;
 	background: url(../images/background2.png);
+	overflow: auto;
 }
 
 .news li{
@@ -312,12 +305,12 @@ margin-right: 5px;
 }
 
 .picture_box{
-   width: 240px;
+   width: 320px;
    height: 165px;
    padding: 10px;
    background: white;
    font-size: 14px;
-   margin: 15px;
+   margin: 3px;
    display: inline-block;
  }
 
@@ -369,7 +362,7 @@ blockquote:before{
 }
 
 .medium_box{
-   width: 186px;
+   width: 200px;
    height: 165px;
    padding: 10px;
    background: white;
@@ -382,15 +375,26 @@ blockquote:before{
 width: 180px;
 } 
 
-.small_box{
+.small_box {
 	display: inline-block;
-	margin: 10px;
+	margin: 3px;
 	width: 106px;
+	vertical-align: 
 }
 
 .success_stories{
 	background: #C0C0C0;
-	height: 550px;
+	height: 400px;
+}
+
+.wrap{
+	width: 360px;
+	display: inline-block;
+}
+
+.wrap2{
+	width: 270px;
+	display: inline-block;
 }
 
 footer  ul{
@@ -422,10 +426,74 @@ h5{
 }
  footer{
  	background: black;
+ 	display: relative;
  }
-/* 
-h5 > ul > li{
-position: absolute;
-left: 0;
-} */
+.latest_press{
+   display: inline-block;
+	width: 250px;
+	background: #708090;
+	padding:5px;
+    margin: 15px;
+}
 
+.latest_press h5{
+	color: #3195c9;
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    width: 230px;
+}
+
+.date_footer_container{
+  overflow: hidden;
+  border-bottom: 1px solid #C0C0C0;
+  text-transform: capitalize;
+}
+
+.day_box_footer{
+  color: #FFFFFF;
+  margin: 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.month_box_footer{
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.date_footer{
+   display: inline-block;
+   float: left;
+   width: 60px;
+   padding: 2px;
+   margin: 10px;
+ }
+
+.date_footer_container a{
+  color: white;
+  text-decoration: none;
+ }
+ .signUp_box{
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.signUp_button{
+  width: 60px;
+  height: 20px;
+ position: absolute;
+ right: 2px;
+ margin-top: 3px;
+ background: #3195c9;
+ color:white;
+}
+
+.social{
+	margin-top: 20px;
+}
