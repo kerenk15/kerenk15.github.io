@@ -1,4 +1,53 @@
-.general{
+.general span{
   color: black;
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.elemnts{
+	width: 400px;
+}
+
+footer{
+	height: 289px;
+	overflow: hidden;
+	}
+
+.block{
+	display: block;
+	margin: 30px;
+	height: 40px;
+	float: left;
+}
+
+.float{
+	float: left;
+}
+
+h1,h2,h3,h4,h5{
+	text-align: left;
+}
+
+.navigations{
+	height: 200px;
+background-color:Cornsilk;
+}
+
+.headers{
+	height: 350px;
+	background-color: BlanchedAlmond;
+}
+
+.buttons{
+	height: 150px;
+	background-color: NavajoWhite;
+}
+
+.icons{
+	height: 550px;
+	background-color: RosyBrown;
+	position: relative;
+
 }
